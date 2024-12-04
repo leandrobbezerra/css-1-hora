@@ -1,0 +1,249 @@
+/* 2. Seletores Básicos */
+
+/* Seletores de elementos (tag) */
+h1 {
+  color: #6b6b6bcb;
+}
+
+/* Seletores de Elementos */
+p {
+  font-size: 30px;
+}
+
+/* Tag -> Seleciona toda as tags */
+/* Classe -> grupo de elementos => Começa com . */
+/* Id -> Elemento único => Começa com #  */
+
+/* Classe Destaque  */
+
+.destaque {
+  background-color: aqua;
+}
+
+/* Não pode usar o mesmo id mais de uma vez  */
+#unico {
+  font-size: 20px;
+  color: blueviolet;
+}
+
+/* Classe pai container e Classe filho texto  */
+
+.container .texto {
+  color: green;
+}
+
+/* 3. Propriedades de Texto e Fontes */
+.fonte {
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: 500; /* Quanto maior mais em negrito fica */
+  line-height: 1;  /* Distancia de linhas */
+}
+
+.texto-cor {
+  color: blue;
+}
+
+.alinhamento {
+  text-align: center;
+}
+
+.decoracao {
+  text-decoration: underline; /* Texto Sublinhado */
+  text-transform: uppercase; /* Texto em caixa alta */
+  letter-spacing: 5px; /* Espaçamento de letras */
+}
+
+/* 4. Cores e Backgrounds */
+
+.cor-nome {
+  color: rgb(38, 199, 87);
+}
+
+/* Letra: Entre A e F */
+/* Letra: Entre 0 e 9 */
+.cor-hex {
+  color: #0af7ff;
+}
+
+.cor-rgb {
+  color: rgb(120, 50, 10);
+}
+
+/* Controla Hue, saturation, lightness */
+.cor-hsl {
+  color: hsl(200, 5%, 50%);
+}
+
+/* Backgrounds */
+
+.background-cor {
+  background: #123abc;
+  color: #fff;
+  
+}
+
+.background-imagem {
+  color: #fff;
+  background-image: url("https://blog.gokursos.com/wp-content/uploads/2023/05/programming-background-with-person-working-with-codes-computer-1200x800.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #123abc;
+}
+
+/* 5. Box Model */
+/* margin -> espaçamento externo */
+/* border -> borda em volta do elemento */
+/* padding -> espaçamento interno */
+/* conteudo -> largura e altura ( width e height */
+
+.box-model {
+  background: red;
+  width: 500px;
+  height: 250x;
+  padding: 20px;
+  border: 5px dotted rgb(125, 125, 131);
+  margin: 200px;
+}
+
+/* 6. Layout e Display */
+.block {
+  background-color: bisque;
+}
+
+.inline {
+  display: inline;
+  background-color: red;
+}
+
+.inline-block {
+  display: inline-block;
+  background-color: #123abc;
+}
+
+.none {
+  display: none;
+}
+
+/* Float e Clear */
+
+.float-esquerda {
+  float: left;
+}
+
+.float-direita {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+/* 7. Posicionamento */
+
+.relativo {
+  position: relative;
+  left: 50px;
+  top: 100px;
+}
+
+.posicionamento {
+  position: relative;
+  border: 1px solid blue;
+  height: 1000px;
+}
+
+.absoluto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #de03f1;
+}
+
+.fixo {
+  background-color: rgb(145, 145, 145);
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.sticky {
+  position: sticky;
+  top: 10px;
+  left: 50px;
+  background-color: antiquewhite;
+}
+
+/* z-index */
+.z-index-container {
+  position: relative;
+  height: 200px;
+  border: 1px solid #000;
+}
+
+.caixa1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  z-index: 2;
+}
+
+.caixa2 {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: rgb(0, 255, 13);
+  z-index: 1;
+}
+
+/* 8. Responsividade  */
+
+.responsivo {
+  background-color: #d3d3d3;
+  padding: 20px;
+  font-size: 50px;
+}
+
+@media (max-width: 600px) {
+  .responsivo{
+    background-color: red;
+    font-size: 100px;
+  }
+}
+
+/* 8. Animações e Transições  */
+
+.botao-transicao {
+  background-color: #b1b1b1fd;
+  transition: 0.4s;
+}
+
+.botao-transicao:hover {
+  background-color: #7a7979;
+}
+
+.animacao {
+  width: 100px;
+  height: 100px;
+  background-color: #ffdead;
+  position: relative;
+  animation: mover 5s infinite;
+}
+
+@keyframes mover {
+  0% {
+    left: 0;
+    background-color: #ffdead;
+  }
+  50% {
+    left: 200px;
+    background-color: #ff69b4;
+  }
+  100% {
+    left: 0;
+    background-color: #ffdead;
+  }
+}
